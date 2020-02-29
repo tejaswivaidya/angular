@@ -1,0 +1,15 @@
+<h4 *ngIf = "validUser; else otherCondition" > I am a valid user</h4>
+<ng-template #otherCondition>
+    <h4>I am invalid user</h4>
+</ng-template>
+
+<h4>student List : </h4>
+<ul>
+    <li *ngFor = "let item of studentList;let i = index;">
+        <ng-container >
+            {{item.name}} <br>{{item.id}}
+        </ng-container>
+    </li>
+</ul>
+
+<!-- <appFirst> </appFirst>  -->

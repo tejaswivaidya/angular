@@ -1,0 +1,27 @@
+<div>
+    <button type="button" (click)="fetchData()"> click </button>
+</div>
+<hr>
+<div *ngIf = "employee.length > 0"> 
+    <h3>Employee Data</h3>
+    <table border="3px">
+        <tr>
+            <th>ID</th>
+            <th>Employee name</th>
+            <th>Employee Salary</th>
+            <th>Employee Age</th>
+        </tr>
+        <tr *ngFor="let item of Employee">
+            <td>{{item.id}}</td>
+            <td>{{item.employee_name}}</td>
+            <td>{{item.employee_salary}}</td>
+            <td>{{item.employee_age}}</td>
+        </tr>
+     </table>
+    </div>
+
+
+
+   
+
+    
